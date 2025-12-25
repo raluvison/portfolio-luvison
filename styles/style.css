@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+:root {
+    --fundo-principal: #1A1A1D;
+    --texto: white;
+    --destaque: #102BEF;
+    --destaque-inverso: #1D2771;
+    --detalhes: #5895F0;
+    --font-titulo: "Montserrat";
+    --font-texto: "Roboto";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo-principal);
+    font-family: var(--font-texto);
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: blue;
+    color: var(--texto);
+    font-family: var(--font-titulo);
+
+}
+
+#btn-burguer {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+
+menu {
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    padding: 5px;
+}
+
+menu > a {
+    color: white;
+    text-decoration: none;
+}
