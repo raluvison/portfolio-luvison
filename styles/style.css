@@ -10,47 +10,55 @@
     --font-texto: "Roboto";
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: var(--fundo-principal);
+    background-color: var(--bg-dark);
     font-family: var(--font-texto);
 }
 
-header {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: blue;
-    color: var(--texto);
-    font-family: var(--font-titulo);
-
+.coluna {
+    height: 500px;
 }
 
-#btn-burguer {
+.conteudo {
+  height: 100%;
+}
+
+/*Sobre Home*/
+
+.home-sobre {
+  
+  padding-left: 10px;
+}
+
+.home-sobre > h2 {
+    padding-top: 50%;
+    font-size: 1em;
+    color: var(--destaque);
+    margin-bottom: 0;
+}
+
+.home-sobre > h1 {
     font-size: 2em;
-    cursor: pointer;
+    color: var(--texto);
+    margin-bottom: 0;
 }
 
-
-
-menu {
-    background-color: red;
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100vw;
-    padding: 5px;
+.home-sobre > p {
+    font-size: 1em;
+    color: var(--texto);
 }
 
-menu > a {
-    color: white;
-    text-decoration: none;
+/*Imagem Home*/
+
+#luvison-home-box {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+}
+
+#luvison-home-box img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;   /* recorta */
+  object-position: top;
 }
