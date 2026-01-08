@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('00..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --fundo-principal: #1A1A1D;
@@ -13,6 +14,7 @@
 body {
     background-color: var(--bg-dark);
     font-family: var(--font-texto);
+    box-sizing: border-box;
 }
 
 .coluna {
@@ -23,17 +25,64 @@ body {
   height: 100%;
 }
 
+/* NavBar */
+
+.navbar {
+  box-shadow: 5px 3px 15px 0 rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.collapse,
+.collapsing {
+  transition: none !important;
+}
+
+@media (max-width: 575.98px) {
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background-color: #212529;
+    padding: 1rem;
+
+    z-index: 1050;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  }
+}
+
+.container-fluid {
+  padding: 5px 0px 5px 30px;
+}
+
+.navbar-toggler {
+  margin-right: 30px;
+}
+
+.navbar-nav {
+  padding-top: 10px;
+}
+
+/* Home */
+
+.container-fluid {
+  padding: 0px;
+  margin: 0px;
+}
+
+
 /*Sobre Home*/
 
 .home-sobre {
-  
   padding-left: 10px;
 }
 
 .home-sobre > h2 {
-    padding-top: 50%;
+    padding-top: 100%;
     font-size: 1em;
-    color: var(--destaque);
+    color: var(--detalhes);
     margin-bottom: 0;
 }
 
@@ -51,14 +100,25 @@ body {
 /*Imagem Home*/
 
 #luvison-home-box {
-  width: 300px;
-  height: 500px;
+  width: 100%;
+  height: 600px;
   overflow: hidden;
+  display: flex;
+  align-items: end;
 }
 
 #luvison-home-box img {
   width: 100%;
   height: 500px;
-  object-fit: cover;   /* recorta */
+  object-fit: cover;
+  position: absolute;
+  right: 0;
   object-position: top;
+}
+
+#barra-azul {
+  background-color: var(--detalhes);
+  width: 100vw;
+  height: 10px;
+  margin-top: 0px;
 }
