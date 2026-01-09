@@ -4,6 +4,7 @@
 :root {
     --fundo-principal: #1A1A1D;
     --texto: white;
+    --informacoes: rgb(180, 180, 180);
     --destaque: #3957e0;
     --destaque-inverso: #1D2771;
     --detalhes: #5895F0;
@@ -136,33 +137,50 @@ body {
 }
 
 .texto-sobre > h1 {
-    padding-top: 20%;
-    font-size: 2em;
-    color: var(--detalhes);
-    margin-bottom: 0;
+  padding-top: 30%;
+  font-size: 2em;
+  color: var(--texto);
+  margin-bottom: 20px;
 }
 
 .texto-sobre > p {
-    font-size: 1em;
-    color: var(--texto);
+  font-size: 1em;
+  color: var(--informacoes);
+  padding-bottom: 30px;
 }
 
 #sobre-dados-box {
-  height: 100px;
-}
-
-#sobre-dados-box {
+  height: 150px;
   display: flex;
   gap: 10px;
 }
 
 #dados-titulos > h2 {
   color: white;
+  font-size: 1em;
+  margin-bottom: 12px;
 }
 
 #dados-pessoais > p {
-  color: white;
+  color: var(--informacoes);
+  font-size: 0.95em;
+  width: 250px;
+  line-height: 15px;
+  margin-top: 3px;
 }
+
+#btn-curriculo-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#btn-cv {
+  border-radius: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 
 /*Imagem Sobre*/
 
@@ -181,4 +199,5 @@ body {
   position: absolute;
   right: 0;
   object-position: left bottom;
+  pointer-events: none;
 }
