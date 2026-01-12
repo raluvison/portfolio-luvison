@@ -334,6 +334,31 @@ body {
   box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
 }
 
+.curso-btn {
+  padding: 10px 15px 5px 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  border-left: var(--destaque) solid 5px;
+  border-right: var(--destaque) solid 5px;
+}
+
+.curso-btn:hover {
+  border-left: var(--destaque-inverso) solid 10px;
+  border-right: var(--destaque-inverso) solid 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.curso-menu {
+  display: none;
+}
+
+.curso-menu.open {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  transition: 0.3s ease ;
+}
+
 .curso-periodo {
   color: var(--texto);
   margin-bottom: 0px;

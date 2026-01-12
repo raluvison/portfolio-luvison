@@ -172,50 +172,54 @@
                         <h3 class="curso-local" style="margin-bottom: 5px;">Bootstrap</h3>
                         <p class="curso-legenda"></p>
                     </div>
-                    <div class="curso">
+                    <div class="curso-btn">
                         <p class="curso-periodo">2025 - 2026</p>
                         <h3 class="curso-local" style="margin-bottom: 5px;">Python</h3>
                         <p class="curso-legenda"></p>
                     </div>
-                    <div class="curso">
-                        <p class="curso-periodo">2025 - 2026</p>
-                        <h3 class="curso-local">Curso em Vídeo</h3>
-                        <p class="curso-legenda">Python 3: Mundo 2</p>
+                    <div class="curso-menu">
+                        <div class="curso">
+                            <p class="curso-periodo">2025 - 2026</p>
+                            <h3 class="curso-local">Curso em Vídeo</h3>
+                            <p class="curso-legenda">Python 3: Mundo 2</p>
+                        </div>
+                        <div class="curso">
+                            <p class="curso-periodo">2025</p>
+                            <h3 class="curso-local">Curso em Vídeo</h3>
+                            <p class="curso-legenda">Python 3: Mundo 1</p>
+                        </div>
                     </div>
-                    <div class="curso">
-                        <p class="curso-periodo">2025</p>
-                        <h3 class="curso-local">Curso em Vídeo</h3>
-                        <p class="curso-legenda">Python 3: Mundo 1</p>
-                    </div>
-                    <div class="curso">
+                    <div class="curso-btn">
                         <p class="curso-periodo">2025</p>
                         <h3 class="curso-local" style="margin-bottom: 5px;">HTML5 e CSS3</h3>
                         <p class="curso-legenda"></p>
                     </div>
-                    <div class="curso">
-                        <p class="curso-periodo">2025</p>
-                        <h3 class="curso-local">Curso em Vídeo</h3>
-                        <p class="curso-legenda">Curso de HTML5 e CSS3: Módulo 5</p>
-                    </div>
-                    <div class="curso">
-                        <p class="curso-periodo">2025</p>
-                        <h3 class="curso-local">Curso em Vídeo</h3>
-                        <p class="curso-legenda">Curso de HTML5 e CSS3: Módulo 4</p>
-                    </div>
-                    <div class="curso">
-                        <p class="curso-periodo">2025</p>
-                        <h3 class="curso-local">Curso em Vídeo</h3>
-                        <p class="curso-legenda">Curso de HTML5 e CSS3: Módulo 3</p>
-                    </div>
-                    <div class="curso">
-                        <p class="curso-periodo">2025</p>
-                        <h3 class="curso-local">Curso em Vídeo</h3>
-                        <p class="curso-legenda">Curso de HTML5 e CSS3: Módulo 2</p>
-                    </div>
-                    <div class="curso">
-                        <p class="curso-periodo">2025</p>
-                        <h3 class="curso-local">Curso em Vídeo</h3>
-                        <p class="curso-legenda">Curso de HTML5 e CSS3: Módulo 1</p>
+                    <div class="curso-menu">
+                        <div class="curso">
+                            <p class="curso-periodo">2025</p>
+                            <h3 class="curso-local">Curso em Vídeo</h3>
+                            <p class="curso-legenda">Curso de HTML5 e CSS3: Módulo 5</p>
+                        </div>
+                        <div class="curso">
+                            <p class="curso-periodo">2025</p>
+                            <h3 class="curso-local">Curso em Vídeo</h3>
+                            <p class="curso-legenda">Curso de HTML5 e CSS3: Módulo 4</p>
+                        </div>
+                        <div class="curso">
+                            <p class="curso-periodo">2025</p>
+                            <h3 class="curso-local">Curso em Vídeo</h3>
+                            <p class="curso-legenda">Curso de HTML5 e CSS3: Módulo 3</p>
+                        </div>
+                        <div class="curso">
+                            <p class="curso-periodo">2025</p>
+                            <h3 class="curso-local">Curso em Vídeo</h3>
+                            <p class="curso-legenda">Curso de HTML5 e CSS3: Módulo 2</p>
+                        </div>
+                        <div class="curso">
+                            <p class="curso-periodo">2025</p>
+                            <h3 class="curso-local">Curso em Vídeo</h3>
+                            <p class="curso-legenda">Curso de HTML5 e CSS3: Módulo 1</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -223,4 +227,15 @@
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+document.querySelectorAll(".curso-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".curso-menu").forEach(menu =>
+      menu.classList.remove("open")
+    );
+
+    btn.nextElementSibling.classList.add("open");
+  });
+});
+</script>
 </html>
