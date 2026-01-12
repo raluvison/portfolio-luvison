@@ -280,38 +280,17 @@ body {
   border-radius: 10px;
 }
 
-
-/*Imagem Habilidades*/
-
-#habilidades-box {
-  width: 100%;
-  height: 670px;
-  overflow: hidden;
-  display: flex;
-  align-items: end;
-}
-
-#habilidades-box img {
-  width: 100%;
-  height: 670px;
-  object-fit: cover;
-  position: absolute;
-  right: 0;
-  object-position: top;
-  pointer-events: none;
-}
-
-/* C E R T I F I C A D O S */
+/* C U R S O S */
 
 #cursos {
   height: 600px;
-  background: top no-repeat url(../images/fundo-certificados.png);
+  background: top repeat url(../images/fundo-certificados.png);
   background-size: cover;
   display: grid;
   grid-template-columns: 30px 1fr 30px;
 }
 
-/* Texto Certificados */
+/* Texto Cursos */
 
 .texto-cursos {
   grid-column-start: 2;
@@ -371,25 +350,4 @@ body {
   color: var(--informacoes);
   margin: 0;
   font-size: 0.9em;
-}
-
-
-/*Imagem Certificados*/
-
-#habilidades-box {
-  width: 100%;
-  height: 670px;
-  overflow: hidden;
-  display: flex;
-  align-items: end;
-}
-
-#habilidades-box img {
-  width: 100%;
-  height: 670px;
-  object-fit: cover;
-  position: absolute;
-  right: 0;
-  object-position: top;
-  pointer-events: none;
 }
