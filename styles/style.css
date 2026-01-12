@@ -224,16 +224,18 @@ body {
 /* H A B I L I D A D E S */
 
 #habilidades {
-  height: 670px;
+  height: 464px;
   background: top no-repeat url(../images/fundo-habilidades.png);
   background-size: cover;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
 }
 
-/* Texto Sobre */
+/* Texto Habilidades */
 
 .texto-habilidades {
-  display: flex;
-  justify-content: center;
+  grid-column-start: 2;
+  text-align: center;
 }
 
 .texto-habilidades > h1 {
@@ -241,6 +243,41 @@ body {
   font-size: 2em;
   color: var(--texto);
   margin-bottom: 20px;
+}
+
+.texto-habilidades > p {
+  color: var(--informacoes);
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+#skill-container {
+  margin: 0px 40px 0px 40px;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.nome {
+  color: var(--texto);
+}
+
+.porcent {
+  color: var(--texto);
+}
+
+.progresso {
+  height: 10px;
+  background-color: var(--destaque);
+  border-radius: 10px;
 }
 
 
@@ -264,3 +301,95 @@ body {
   pointer-events: none;
 }
 
+/* C E R T I F I C A D O S */
+
+#cursos {
+  height: 600px;
+  background: top no-repeat url(../images/fundo-certificados.png);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+}
+
+/* Texto Certificados */
+
+.texto-cursos {
+  grid-column-start: 2;
+  text-align: center;
+}
+
+.texto-cursos > h1 {
+  padding-top: 10%;
+  font-size: 2em;
+  color: var(--texto);
+  margin-bottom: 20px;
+}
+
+.texto-cursos > p {
+  color: var(--informacoes);
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+#cursos-container {
+  margin: 0px 40px 0px 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+  cursor: pointer;
+  text-align: start;
+}
+
+.curso {
+  padding: 10px 15px 5px 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  border-left: var(--destaque) solid 5px;
+  border-right: var(--destaque) solid 5px;
+  transition: 0.3s ease ;
+}
+
+.curso:hover {
+  border-left: var(--destaque-inverso) solid 10px;
+  border-right: var(--destaque-inverso) solid 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.curso-periodo {
+  color: var(--texto);
+  margin-bottom: 0px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.curso-local {
+  color: var(--detalhes);
+  margin-bottom: 0px;
+}
+
+.curso-legenda {
+  color: var(--informacoes);
+  margin: 0;
+  font-size: 0.9em;
+}
+
+
+/*Imagem Certificados*/
+
+#habilidades-box {
+  width: 100%;
+  height: 670px;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+}
+
+#habilidades-box img {
+  width: 100%;
+  height: 670px;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  object-position: top;
+  pointer-events: none;
+}
