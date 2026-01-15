@@ -29,11 +29,6 @@ body {
 
 /* N A V B A R */
 
-.navbar {
-  box-shadow: 5px 3px 15px 0 rgba(0,0,0,0.3);
-  position: relative;
-}
-
 .collapse,
 .collapsing {
   transition: none !important;
@@ -79,7 +74,7 @@ body {
 }
 
 
-/*Sobre Home*/
+/*Texto Home*/
 
 .home-sobre {
   padding-left: 20px;
@@ -107,7 +102,7 @@ body {
 
 #luvison-home-box {
   width: 100%;
-  height: 620px;
+  height: 680px;
   overflow: hidden;
   display: flex;
   align-items: end;
@@ -225,7 +220,7 @@ body {
 /* H A B I L I D A D E S */
 
 #habilidades {
-  height: 464px;
+  height: 477px;
   background: top no-repeat url(../images/fundo-habilidades.png);
   background-size: cover;
   display: grid;
@@ -284,7 +279,7 @@ body {
 /* C U R S O S */
 
 #cursos {
-  height: 600px;
+  height: 382px;
   background: top repeat url(../images/fundo-certificados.png);
   background-size: cover;
   display: grid;
@@ -321,6 +316,7 @@ body {
 }
 
 .curso {
+  margin: 0px 10px 0px 10px;
   padding: 10px 15px 5px 15px;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
@@ -335,8 +331,17 @@ body {
   box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
 }
 
+.curso > .curso-periodo {
+  font-size: 0.8em;
+}
+
 .curso > .curso-local {
   color: var(--texto);
+  font-size: 1em;
+}
+
+.curso > .curso-legenda {
+  font-size: 0.8em;
 }
 
 .curso-periodo {
@@ -381,4 +386,40 @@ body {
   flex-flow: column;
   gap: 15px;
   transition: 0.3s ease ;
+}
+
+.fundo-menu-open-py {
+  display: none;
+  height: 175px;
+  background: top repeat url(../images/fundo-certificados.png);
+  background-size: cover;
+}
+
+.fundo-menu-open-py.open {
+  display: block;
+}
+
+.fundo-menu-open-hc {
+  display: none;
+  height: 440px;
+  background: top repeat url(../images/fundo-certificados.png);
+  background-size: cover;
+}
+
+.fundo-menu-open-hc.open {
+  display: block;
+}
+
+/* R O D A P É */ 
+
+footer {
+  background-color: var(--bg-dark);
+  text-align: center;
+}
+
+footer > p {
+  padding: 15px;
+  color: white;
+  font-size: 0.7em;
+  margin-bottom: 0;
 }
