@@ -410,6 +410,71 @@ body {
   display: block;
 }
 
+/* C O N T A T O */
+
+#contato {
+  height: 400px;
+  background: top repeat url(../images/fundo-contato.png);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+}
+
+/* Texto Contato */
+
+.texto-contato {
+  grid-column-start: 2;
+  text-align: center;
+}
+
+.texto-contato > h1 {
+  padding-top: 10%;
+  font-size: 2em;
+  color: var(--texto);
+  margin-bottom: 20px;
+}
+
+.texto-contato > p {
+  color: var(--informacoes);
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+#contato-container {
+  margin: 0px 40px 0px 40px;
+}
+
+#contato-container > .item {
+  margin-bottom: 30px;
+}
+
+#contato-container > .item > a {
+  text-decoration: none;
+  color: var(--texto);
+}
+
+#contato-container > .item > .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contato-container > .item > .info > a {
+  text-decoration: none;
+  color: var(--informacoes);
+}
+
+#contato-container > .item > .info > .nome {
+  color: var(--texto);
+}
+
+#contato-container > .item > .barra {
+  height: 3px;
+  background-color: var(--destaque);
+  border-radius: 10px;
+}
+
 /* R O D A P É */ 
 
 footer {
