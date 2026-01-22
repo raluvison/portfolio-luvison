@@ -27,4 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".curso-btn").forEach(btn => {
     btn.addEventListener("click", () => toggleMenu(btn));
   });
+
+  // Fechar navbar ao clicar fora
+  document.addEventListener("click", (e) => {
+    const navbar = document.querySelector(".navbar");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+    const navbarToggler = document.querySelector(".navbar-toggler");
+
+    // Verifica se o clique foi fora da navbar e se o menu está aberto
+    if (!navbar.contains(e.target) && navbarCollapse.classList.contains("show")) {
+      navbarToggler.click();
+    }
+  });
 });
+
