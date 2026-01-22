@@ -151,6 +151,15 @@
     display: none;
   }
 
+  /* ========== SEÇÕES OCULTAS (APENAS NA HOME) ========== */
+
+  body.index-page #sobre,
+  body.index-page #habilidades,
+  body.index-page #cursos,
+  body.index-page #contato {
+    display: none;
+  }
+
   /* ========== RODAPÉ ========== */
 
   footer {

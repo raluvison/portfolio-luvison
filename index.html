@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/responsive.css">
   </head>
-<body class="bg-dark">
+<body class="bg-dark index-page">
   <header>
     <nav class="navbar navbar-expand-sm bg-dark fixed-top" data-bs-theme="dark">
       <div class="container-fluid">
@@ -33,16 +33,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+              <a class="nav-link active" aria-current="page" href="#sobre" data-mobile="#sobre" data-desktop="pages/about.html">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#habilidades">Habilidades</a>
+              <a class="nav-link active" aria-current="page" href="#habilidades" data-mobile="#habilidades" data-desktop="pages/skills.html">Habilidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#cursos">Cursos e Estudos</a>
+              <a class="nav-link active" aria-current="page" href="#cursos" data-mobile="#cursos" data-desktop="pages/courses.html">Cursos e Estudos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#contato">Contato</a>
+              <a class="nav-link active" aria-current="page" href="#contato" data-mobile="#contato" data-desktop="pages/contact.html">Contato</a>
             </li>
           </ul>
         </div>
@@ -260,4 +260,25 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="scripts/script.js"></script>
+<script>
+  // Controla os links de navegação conforme o tamanho da tela
+  function updateNavLinks() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const isDesktop = window.innerWidth >= 768;
+    
+    navLinks.forEach(link => {
+      if (isDesktop) {
+        link.href = link.dataset.desktop;
+      } else {
+        link.href = link.dataset.mobile;
+      }
+    });
+  }
+  
+  // Executa ao carregar a página
+  updateNavLinks();
+  
+  // Atualiza quando a janela é redimensionada
+  window.addEventListener('resize', updateNavLinks);
+</script>
 </html>
