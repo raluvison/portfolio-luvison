@@ -39,5 +39,19 @@ document.addEventListener("DOMContentLoaded", () => {
       navbarToggler.click();
     }
   });
+
+  // Fechar navbar ao clicar em um link de navegação
+  document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+      const navbarToggler = document.querySelector(".navbar-toggler");
+
+      // Verifica se o menu está aberto e fecha
+      if (navbarCollapse.classList.contains("show")) {
+        navbarToggler.click();
+      }
+    });
+  });
 });
+
 

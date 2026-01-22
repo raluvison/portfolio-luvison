@@ -94,7 +94,11 @@ body {
 
 .collapse,
 .collapsing {
-  transition: none !important;
+  transition: height 0.25s ease !important;
+}
+
+.navbar-collapse {
+  overflow: hidden !important;
 }
 
 @media (max-width: 575.98px) {
@@ -108,6 +112,33 @@ body {
     z-index: 1050;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
     border-bottom: 1px solid rgba(88, 149, 240, 0.2);
+    animation: slideDown 0.25s ease;
+  }
+
+  .navbar-collapse.collapse:not(.show) {
+    animation: slideUp 0.25s ease;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
   }
 }
 
@@ -206,7 +237,7 @@ body {
 #sobre-dados-box {
   height: 150px;
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
 #dados-titulos > h2 {
@@ -219,14 +250,12 @@ body {
   color: var(--informacoes);
   font-size: 0.95em;
   width: 250px;
-  line-height: 15px;
-  margin-top: 3px;
+  line-height: 24px;
 }
 
 #btn-curriculo-box {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
 }
 
 #btn-cv {
@@ -296,7 +325,6 @@ body {
   transform: scale(1.08);
 }
 
-
 /*Imagem Sobre*/
 
 #sobre-box {
@@ -320,7 +348,7 @@ body {
 /* HABILIDADES */
 
 #habilidades {
-  height: 477px;
+  height: 446px;
   background: top no-repeat url(../images/fundo-habilidades.png);
   background-size: cover;
   display: grid;
@@ -459,7 +487,7 @@ body {
 }
 
 .texto-cursos > h1 {
-  padding-top: 10%;
+  padding-top: 20%;
   font-size: 2em;
   color: var(--texto);
   margin-bottom: 20px;
@@ -565,7 +593,7 @@ body {
 
 .fundo-menu-open-py {
   display: none;
-  height: 175px;
+  height: 160px;
   background: top repeat url(../images/fundo-certificados.png);
   background-size: cover;
 }
@@ -576,7 +604,7 @@ body {
 
 .fundo-menu-open-hc {
   display: none;
-  height: 440px;
+  height: 446px;
   background: top repeat url(../images/fundo-certificados.png);
   background-size: cover;
 }
@@ -588,7 +616,7 @@ body {
 /* CONTATO */
 
 #contato {
-  height: 480px;
+  height: 470px;
   background: top repeat url(../images/fundo-contato.png);
   background-size: cover;
   display: grid;
@@ -603,15 +631,9 @@ body {
 }
 
 .texto-contato > h1 {
-  padding-top: 10%;
+  padding-top: 20%;
   font-size: 2em;
   color: var(--texto);
-  margin-bottom: 20px;
-}
-
-.texto-contato > p {
-  color: var(--informacoes);
-  font-size: 1em;
   margin-bottom: 20px;
 }
 
