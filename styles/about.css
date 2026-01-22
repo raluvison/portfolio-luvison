@@ -1,0 +1,85 @@
+/* ========================================
+   SEÇÃO SOBRE
+   ======================================== */
+
+.texto-sobre {
+  padding-left: 20px;
+}
+
+.texto-sobre > h1 {
+  padding-top: 30%;
+  font-size: 2em;
+  color: var(--texto);
+  margin-bottom: 20px;
+}
+
+.texto-sobre > p {
+  font-size: 1em;
+  color: var(--informacoes);
+  padding-bottom: 30px;
+}
+
+#sobre-dados-box {
+  height: 150px;
+  display: flex;
+  gap: 30px;
+}
+
+#dados-titulos > h2 {
+  color: white;
+  font-size: 1em;
+  margin-bottom: 12px;
+}
+
+#dados-pessoais > p {
+  color: var(--informacoes);
+  font-size: 0.95em;
+  width: 250px;
+  line-height: 24px;
+}
+
+#btn-curriculo-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+#social-media {
+  margin-top: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.8em;
+  width: 100%;
+}
+
+#social-media > a > i {
+  transition: 0.3s ease;
+  border-radius: 50%;
+  transform-origin: center;
+  color: var(--informacoes);
+}
+
+#social-media > a > i:hover {
+  color: var(--detalhes);
+  transform: scale(1.08);
+}
+
+#sobre-box {
+  width: 100%;
+  height: 670px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+#sobre-box img {
+  width: 100%;
+  height: 670px;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  object-position: left bottom;
+  pointer-events: none;
+}

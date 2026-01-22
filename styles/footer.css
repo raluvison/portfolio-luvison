@@ -1,0 +1,15 @@
+/* ========================================
+   RODAPÉ
+   ======================================== */
+
+footer {
+  background-color: var(--bg-dark);
+  text-align: center;
+}
+
+footer > p {
+  padding: 15px;
+  color: white;
+  font-size: 0.7em;
+  margin-bottom: 0;
+}

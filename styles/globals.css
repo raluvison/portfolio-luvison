@@ -1,0 +1,29 @@
+/* ========================================
+   ESTILOS GLOBAIS
+   ======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  font-family: var(--font-texto);
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+/* COLUNA */
+
+.coluna {
+  height: 500px;
+}
+
+.conteudo {
+  height: 100%;
+}

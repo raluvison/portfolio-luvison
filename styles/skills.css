@@ -1,0 +1,103 @@
+/* ========================================
+   SEÇÃO HABILIDADES
+   ======================================== */
+
+#habilidades {
+  height: 446px;
+  background: top no-repeat url(../images/fundo-habilidades.png);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+}
+
+.texto-habilidades {
+  grid-column-start: 2;
+  text-align: center;
+}
+
+.texto-habilidades > h1 {
+  padding-top: 20%;
+  font-size: 2em;
+  color: var(--texto);
+  margin-bottom: 20px;
+}
+
+.texto-habilidades > p {
+  color: var(--informacoes);
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+#skill-container {
+  margin: 0 40px;
+}
+
+.item {
+  margin-bottom: 15px;
+  animation: slideInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.item:nth-child(1) { animation-delay: 0.1s; }
+.item:nth-child(2) { animation-delay: 0.2s; }
+.item:nth-child(3) { animation-delay: 0.3s; }
+.item:nth-child(4) { animation-delay: 0.4s; }
+.item:nth-child(5) { animation-delay: 0.5s; }
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: bold;
+  position: relative;
+}
+
+.nome {
+  color: var(--texto);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.nome i {
+  color: var(--detalhes);
+}
+
+.porcent {
+  color: var(--detalhes);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.item:hover .nome {
+  transform: translateX(2px);
+}
+
+.item:hover .porcent {
+  color: #8638E0;
+}
+
+.progresso {
+  height: 10px;
+  background: rgba(88, 149, 240, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progresso::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, var(--detalhes), #8638E0);
+  border-radius: 10px;
+  animation: fillProgress 1.5s ease forwards;
+}
+
+.item:hover .progresso::after {
+  box-shadow: 0 0 8px rgba(88, 149, 240, 0.4);
+}

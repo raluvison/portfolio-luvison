@@ -1,0 +1,125 @@
+/* ========================================
+   SEÇÃO CONTATO
+   ======================================== */
+
+#contato {
+  height: 470px;
+  background: top repeat url(../images/fundo-contato.png);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+}
+
+.texto-contato {
+  grid-column-start: 2;
+  text-align: center;
+}
+
+.texto-contato > h1 {
+  padding-top: 20%;
+  font-size: 2em;
+  color: var(--texto);
+  margin-bottom: 20px;
+}
+
+.texto-contato > p {
+  color: var(--informacoes);
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+#contato-container {
+  margin: 0 40px;
+}
+
+#contato-container > .item {
+  margin-bottom: 30px;
+  animation: slideInRight 0.6s ease forwards;
+  opacity: 0;
+  position: relative;
+  padding: 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#contato-container > .item:nth-child(1) { animation-delay: 0.1s; }
+#contato-container > .item:nth-child(2) { animation-delay: 0.2s; }
+#contato-container > .item:nth-child(3) { animation-delay: 0.3s; }
+#contato-container > .item:nth-child(4) { animation-delay: 0.4s; }
+
+#contato-container > .item:hover {
+  background: rgba(88, 149, 240, 0.08);
+  box-shadow: 0 4px 12px rgba(88, 149, 240, 0.15);
+  transform: translateY(-1px);
+}
+
+#contato-container > .item > a {
+  text-decoration: none;
+  color: var(--texto);
+  transition: all 0.3s ease;
+}
+
+#contato-container > .item > .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contato-container > .item > .info > a {
+  text-decoration: none;
+  color: var(--informacoes);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+#contato-container > .item > .info > a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background: var(--detalhes);
+  transition: width 0.3s ease;
+}
+
+#contato-container > .item:hover > .info > a::after {
+  width: 100%;
+}
+
+#contato-container > .item > .info > a:hover {
+  color: var(--detalhes);
+  transform: translateX(1px);
+}
+
+#contato-container > .item > .info > .nome {
+  color: var(--texto);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+#contato-container > .item > .info > .nome i {
+  color: var(--detalhes);
+  transition: all 0.3s ease;
+  font-size: 1.2em;
+}
+
+#contato-container > .item:hover > .info > .nome i {
+  color: #8638E0;
+  transform: scale(1.05) rotate(15deg);
+}
+
+#contato-container > .item > .barra {
+  height: 2px;
+  background: var(--destaque);
+  border-radius: 10px;
+  transform-origin: left;
+  animation: expandBar 0.6s ease forwards;
+}
+
+#contato-container > .item:hover > .barra {
+  box-shadow: 0 0 6px rgba(88, 149, 240, 0.4);
+}

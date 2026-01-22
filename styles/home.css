@@ -1,0 +1,49 @@
+/* ========================================
+   SEÇÃO HOME
+   ======================================== */
+
+.home-sobre {
+  padding-left: 20px;
+}
+
+.home-sobre > h2 {
+  padding-top: 100%;
+  font-size: 1em;
+  color: var(--detalhes);
+  margin-bottom: 0;
+}
+
+.home-sobre > h1 {
+  font-size: 2em;
+  color: var(--texto);
+  margin-bottom: 0;
+}
+
+.home-sobre > p {
+  font-size: 1em;
+  color: var(--texto);
+}
+
+#luvison-home-box {
+  width: 100%;
+  height: 680px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+#luvison-home-box img {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  object-position: bottom;
+}
+
+#barra-azul {
+  background-color: var(--detalhes);
+  width: 100%;
+  height: 10px;
+  margin-top: 0;
+}

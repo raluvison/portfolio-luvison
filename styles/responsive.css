@@ -1,0 +1,255 @@
+/* ========================================
+   RESPONSIVE DESIGN - DESKTOP (768px+)
+   ======================================== */
+
+@media (min-width: 768px) {
+  
+  /* ========== LAYOUT GERAL ========== */
+  
+  section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home {
+    height: 100vh;
+  }
+
+  #sobre {
+    height: 100vh;
+  }
+
+  #habilidades {
+    height: 100vh;
+    background: top no-repeat url(../images/fundo-habilidades.png);
+    background-size: cover;
+  }
+
+  #cursos {
+    height: 100vh;
+    background: top repeat url(../images/fundo-certificados.png);
+    background-size: cover;
+  }
+
+  #contato {
+    height: 100vh;
+    background: top repeat url(../images/fundo-contato.png);
+    background-size: cover;
+  }
+
+  /* ========== COLUNA E CONTEÚDO ========== */
+
+  .coluna {
+    height: auto;
+  }
+
+  .conteudo {
+    height: auto;
+  }
+
+  /* ========== HOME ========== */
+
+  #home .container-fluid .row {
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  #luvison-home-box {
+    height: 100%;
+  }
+
+  #luvison-home-box img {
+    height: auto;
+    position: relative;
+  }
+
+  .home-sobre > h2 {
+    font-size: 1.2em;
+  }
+
+  .home-sobre > h1 {
+    font-size: 2.5em;
+  }
+
+  /* ========== SOBRE ========== */
+
+  #sobre .container-fluid .row {
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  #sobre-box {
+    height: 100%;
+  }
+
+  #sobre-box img {
+    height: auto;
+    position: relative;
+  }
+
+  .texto-sobre > h1 {
+    font-size: 2.5em;
+    padding-top: 0;
+  }
+
+  /* ========== HABILIDADES ========== */
+
+  .texto-habilidades {
+    grid-column-start: 2;
+  }
+
+  .texto-habilidades > h1 {
+    font-size: 2.5em;
+    padding-top: 0;
+  }
+
+  /* ========== CURSOS ========== */
+
+  .texto-cursos {
+    grid-column-start: 2;
+  }
+
+  .texto-cursos > h1 {
+    font-size: 2.5em;
+    padding-top: 0;
+  }
+
+  /* ========== CONTATO ========== */
+
+  .texto-contato {
+    grid-column-start: 2;
+  }
+
+  .texto-contato > h1 {
+    font-size: 2.5em;
+    padding-top: 0;
+  }
+
+  /* ========== NAVBAR ========== */
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  body {
+    padding-top: 60px;
+  }
+
+  #home {
+    padding-top: 0;
+    margin-top: -60px;
+  }
+
+  /* ========== ELEMENTOS VISUAIS ========== */
+
+  #barra-final {
+    display: none;
+  }
+
+  /* ========== RODAPÉ ========== */
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bg-dark);
+    padding: 10px 0;
+    border-top: 1px solid rgba(88, 149, 240, 0.2);
+  }
+
+  footer > p {
+    font-size: 0.65em;
+    padding: 8px;
+  }
+
+}
+
+/* ========================================
+   TABLET (576px - 767px)
+   ======================================== */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  
+  .coluna {
+    height: auto;
+  }
+
+  .conteudo {
+    height: auto;
+  }
+
+  .home-sobre > h1 {
+    font-size: 2.2em;
+  }
+
+  .texto-sobre > h1 {
+    font-size: 2.2em;
+    padding-top: 15%;
+  }
+
+  .texto-habilidades > h1 {
+    font-size: 2.2em;
+    padding-top: 15%;
+  }
+
+  .texto-cursos > h1 {
+    font-size: 2.2em;
+    padding-top: 15%;
+  }
+
+  .texto-contato > h1 {
+    font-size: 2.2em;
+    padding-top: 15%;
+  }
+
+}
+
+/* ========================================
+   MOBILE PEQUENO (até 375px)
+   ======================================== */
+
+@media (max-width: 375px) {
+  
+  .navbar-brand {
+    font-size: 1.1em;
+    margin-left: 15px;
+  }
+
+  .navbar-toggler {
+    margin-right: 15px;
+  }
+
+  .home-sobre {
+    padding-left: 10px;
+  }
+
+  .home-sobre > h1 {
+    font-size: 1.6em;
+  }
+
+  .texto-sobre {
+    padding-left: 10px;
+  }
+
+  .texto-sobre > h1 {
+    font-size: 1.6em;
+  }
+
+  #skill-container {
+    margin: 0 20px;
+  }
+
+  #cursos-container {
+    margin: 0 20px;
+  }
+
+  #contato-container {
+    margin: 0 20px;
+  }
+
+}
