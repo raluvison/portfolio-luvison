@@ -223,14 +223,26 @@
   object-fit: cover;
   }
 
+  #habilidades {
+    grid-template-columns: 60px 1fr 60px;
+  }
+  
   .texto-habilidades > h1 {
     font-size: 2.2em;
     padding-top: 15%;
   }
 
+  #cursos {
+    grid-template-columns: 60px 1fr 60px;
+  }
+
   .texto-cursos > h1 {
     font-size: 2.2em;
     padding-top: 15%;
+  }
+
+  #contato {
+    grid-template-columns: 60px 1fr 60px;
   }
 
   .texto-contato > h1 {
@@ -246,6 +258,10 @@
 
 @media (max-width: 375px) {
   
+  body {
+    overflow-x: hidden;
+  }
+
   .navbar-brand {
     font-size: 1.1em;
     margin-left: 15px;
@@ -269,18 +285,48 @@
 
   .texto-sobre > h1 {
     font-size: 1.6em;
+    padding-top: 45%;
   }
 
+  #sobre-dados-box {
+    font-size: 0.9em;
+    height: 120px;
+  } 
+
+  #sobre-dados-box > #dados-pessoais > p {
+    width: 165px;
+    line-height: 21px;
+  }
+
+  #habilidades {
+    height: 436px;
+  }
+  
   #skill-container {
     margin: 0 20px;
+  }
+
+  #cursos {
+    height: 368px;
   }
 
   #cursos-container {
     margin: 0 20px;
   }
 
+  #cursos-container > .curso-menu {
+    font-size: 0.9em; 
+  }
+
+  .fundo-menu-open-hc {
+    height: 391px;
+  }
+
   #contato-container {
     margin: 0 20px;
   }
 
+  #contato-container > .item > .info {
+    font-size: 0.9em; 
+  }
 }
