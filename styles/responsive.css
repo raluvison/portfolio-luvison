@@ -5,7 +5,11 @@
 @media (min-width: 768px) {
   
   /* ========== LAYOUT GERAL ========== */
-  
+
+  body.index-page {
+    overflow: hidden;
+  }
+
   section {
     min-height: 100vh;
     display: flex;
@@ -54,19 +58,23 @@
   #home .container-fluid .row {
     align-items: center;
     min-height: 100vh;
+    padding-left: 50px;
   }
 
   #luvison-home-box {
-    height: 100%;
+    height: 670px;
   }
 
   #luvison-home-box img {
-    height: auto;
+    height: 100%;
     position: relative;
+    object-position: center;
+    object-fit: cover;
   }
 
   .home-sobre > h2 {
     font-size: 1.2em;
+    padding-top: 0;
   }
 
   .home-sobre > h1 {
@@ -148,7 +156,15 @@
   /* ========== ELEMENTOS VISUAIS ========== */
 
   #barra-final {
-    display: none;
+    display: block;
+    height: 3px;
+    bottom: 5px;
+    position: relative;
+  }
+
+  #barra-azul {
+    display: block;
+    height: 3px;
   }
 
   /* ========== SEÇÕES OCULTAS (APENAS NA HOME) ========== */
@@ -199,6 +215,12 @@
   .texto-sobre > h1 {
     font-size: 2.2em;
     padding-top: 15%;
+  }
+
+  #luvison-home-box img {
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
   }
 
   .texto-habilidades > h1 {
