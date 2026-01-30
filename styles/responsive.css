@@ -327,6 +327,17 @@
   }
 
   #contato-container > .item > .info {
-    font-size: 0.9em; 
+    font-size: 0.85em; 
   }
+}
+
+@media (max-width: 320px) {
+  #contato {
+    grid-template-columns: 15px 1fr 15px;
+  }
+  
+  #contato-container > .item > .info {
+    font-size: 0.8em; 
+  }
+
 }
