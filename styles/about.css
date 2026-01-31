@@ -83,3 +83,61 @@
   object-position: left bottom;
   pointer-events: none;
 }
+
+/* ========================================
+   PAGINA SOBRE
+   ======================================== */
+
+body.page-about {
+  overflow: hidden;
+}
+
+.page-about .col-6 {
+  margin-top: -80px;
+}
+
+.page-about #sobre .container-fluid .row {
+  align-items: center;
+  min-height: 100vh;
+  padding-left: 50px;
+}
+
+.page-about .texto-sobre > h1 {
+  text-align: center;
+}
+
+.page-about .texto-sobre > p {
+  font-size: 1.1em;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-about #sobre-dados-box {
+  justify-content: center;
+  gap: 0;
+  height: 100px;
+}
+
+.page-about #dados-titulos {
+  width: 200px;
+}
+
+.page-about #dados-pessoais {
+  width: 200px;
+}
+
+.page-about #dados-pessoais > p {
+  margin-bottom: 6.5px;
+}
+
+.page-about #sobre-box {
+  height: 680px;
+}
+
+.page-about #sobre-box img {
+  height: 100%;
+  position: relative;
+  object-position: center;
+  object-fit: cover;
+}
